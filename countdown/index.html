@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="countdown.css">
+</head>
+
+<body>
+
+    <div id="ask_container">
+        <div class="ask_inner">
+
+            <p class="heading1">Set Timer</p>
+
+            <div class="set_timer">
+
+                <div class="set" id="set_days">
+                    <button class="arrows" id="up_days" data-target="up_days">^</button>
+                    <span class="time2" id="cur_days">00</span>
+                    <button class="arrows" id="down_days" data-target="down_days">^</button>
+                    <span class="tell" id="tell_days">Days</span>
+                    
+                </div>
+                <div class="set" id="set_hours">
+                    <button class="arrows" id="up_hours" data-target="up_hours">^</button>
+                    <span class="time2" id="cur_hours">00</span>
+                    <button class="arrows" id="down_hours" data-target="down_hours">^</button>
+                    <span class="tell" id="tell_hours">Hours</span>
+                    
+                </div>
+                <div class="set" id="set_mins">
+                    <button class="arrows" id="up_mins" data-target="up_mins">^</button>
+                    <span class="time2" id="cur_mins">00</span>
+                    <button class="arrows" id="down_mins" data-target="down_mins">^</button>
+                    <span class="tell" id="tell_mins">Mins</span>
+                    
+                </div>
+                <div class="set" id="set_secs">
+                    <button class="arrows" id="up_secs" data-target="up_secs">^</button>
+                    <span class="time2" id="cur_secs">00</span>
+                    <button class="arrows" id="down_secs" data-target="down_secs">^</button>
+                    <span class="tell" id="tell_secs">Secs</span>
+                    
+                </div>
+            </div>
+            
+            <img src="countdown_set.svg" alt="" id="countdown_set">
+            
+            <div class="button_area">
+
+                <button id="okay">Start</button>
+            </div>
+            
+
+
+        </div>
+    </div>
+    <div id="main_container">
+        <div class="inner_container">
+
+            <div class="heading2_container">
+                <p class="heading2">Time left: </p>
+            </div>
+
+            <div class="time_container">
+
+                <div class="left">
+                    <span class="time" id="day">00</span>
+                    <span class="head" id="day_head">Days</span>
+                </div>
+
+                <div class="left">
+                    <span class="time" id="hour">00</span>
+                    <span class="head" id="hour_head">Hours</span>
+                </div>
+
+                <div class="left">
+                    <span class="time" id="min">00</span>
+                    <span class="head" id="min_head">Mins</span>
+                </div>
+
+                <div class="left">
+                    <span class="time" id="sec">00</span>
+                    <span class="head" id="sec_head">Secs</span>
+                </div>
+
+            </div>
+
+            <img src="countdown.svg" alt="Unable to Load">
+
+            <div class="show_btns_container">
+                <button class="show_btns" id="stop">Stop</button>
+                <button class="show_btns" id="resume">Resume</button>
+                <button class="show_btns" id="reset">Reset</button>
+
+            </div>
+
+            <script src="countdown.js"></script>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
